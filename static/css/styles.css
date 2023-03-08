@@ -163,7 +163,7 @@
     align-items: center;
     width: 100%;
     height: 950px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/casa1.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.712)), url("../img/casa1.jpg");
     background-repeat: no-repeat;
     background-size: 100% 950px;
     margin-bottom: 100px;
@@ -176,7 +176,7 @@
     align-items: center;
     width: 100%;
     height: 950px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/casa2.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.712)), url("../img/casa2.jpg");
     background-repeat: no-repeat;
     background-size: 100% 950px;
     margin-bottom: 100px;
@@ -190,7 +190,7 @@
     align-items: center;
     width: 100%;
     height: 950px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.527)), url("../img/casa3.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.712)), url("../img/casa3.jpg");
     background-repeat: no-repeat;
     background-size: 100% 950px;
    /* background-attachment: fixed;*/

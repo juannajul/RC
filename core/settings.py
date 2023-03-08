@@ -10,8 +10,8 @@ environ.Env.read_env()
 
 SECRET_KEY = env.str('SECRET_KEY')
 DEBUG = env.bool('DEBUG', default=False)
-ALLOWED_HOSTS = tuple(env.list('ALLOWED_HOSTS', default=[]))
-
+#ALLOWED_HOSTS = tuple(env.list('ALLOWED_HOSTS', default=[]))
+ALLOWED_HOSTS = ['lacasarcbarquisimeto.online','3.18.220.245', 'www.lacasarcbarquisimeto.online', 'localhost']
 # Application definition
 
 INSTALLED_APPS = [
@@ -33,6 +33,11 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+]
+
+CSRF_TRUSTED_ORIGINS=[
+'http://:lacasarcbarquisimeto.online',
+'https://lacasarcbarquisimeto.online'
 ]
 
 ROOT_URLCONF = 'core.urls'
@@ -106,16 +111,18 @@ USE_TZ = True
 
 STATIC_URL = "/static/"
 STATIC_ROOT = BASE_DIR / "staticfiles"
-STATICFILES_DIRS = (
-    BASE_DIR / "static",
-) 
-
-# Media files 
+#STATICFILES_DIRS = (
+#    BASE_DIR / "static",
+#)
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+# Media files
 
 MEDIA_URL = "/mediafiles/"
 MEDIA_ROOT = BASE_DIR / "mediafiles"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
+
+LOGIN_REDIRECT_URL = '/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
